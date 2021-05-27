@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    position: relative;
+}
+
+h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 12em;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-family: 'Parisienne', cursive;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 5rem;
+    letter-spacing: 1px;
+    border-bottom: solid 1px black;
+}
+
+.h2_light {
+    border-bottom: solid 1px white !important;
+}
+
+/* ========================
+  Global
+  ======================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 200vh;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+
+/* ========================
+  Containers
+  ======================== */
+
+.big_bloc {
+    padding: 0 1em;
+}
+
+.comp_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1480px;
+    width: 70vw;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(37, 42, 42);
+    height: 320px;
+    width: 420px !important;
+    border: 2px solid black;
+    border-radius: 2%;
+    margin: 1rem 0.3rem;
+
+}
+
+.nicons {
+    height: 210px;
+    width: 210px;
+    align-self: center;
+    justify-self: center;
+    margin: 10px 0;
+    filter: contrast(90%);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.nicons:hover {
+    filter: contrast(140%);
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.progress_bar:hover {
+    filter: contrast(200%);
+}
+
+
+.progress_bar {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    background-color: grey;
+    border-radius: 18px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.nfill {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+    border-radius: 18px 0 0 18px;
+    border-right: solid 2px white;
+}
+
+
+.nfill p:nth-child(1) {
+    margin: auto 0px auto 12px;
+}
+
+.nfill p:nth-child(2) {
+    margin: auto 12px auto 0px;
+}
+
+.nfill p {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+.fill_figma {
+    width: 90%;
+    background-color: #3B3B3B !important;
+}
+
+.fill_html {
+    width: 85%;
+    background-color: #D9542F !important;
+}
+
+.fill_css {
+    width: 80%;
+    background-color: #006DCC !important;
+}
+
+.fill_js {
+    width: 65%;
+    background-color: #E8D728 !important;
+}
+
+.fill_js p {
+    color: black !important;
+}
+
+.fill_php p {
+    color: black !important;
+}
+
+.fill_php {
+    width: 60%;
+    background-color: #8DA6F4 !important;
+}
+
+.fill_symfony {
+    width: 60%;
+    background-color: #0D0D0D !important;
+}
+
+
+
+.nicon_html {
+    padding: 1.2rem;
+}
+
+.dark_entete h2,
+p {
+    color: white;
+    text-align: center;
+}
+
+.dark_entete h2 {
+    margin-top: 2rem;
+}
+
+.dark_entete p {
+    margin: auto;
+    width: 40%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-top: 3rem;
+}
+
+.light_entete h2,
+p {
+    color: white;
+    text-align: center;
+}
+
+.light_entete h2 {
+    margin-top: 2rem;
+}
+
+.light_entete p {
+    margin: auto;
+    width: 40%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+/* ========================
+Texts
+  ======================== */
+
+.text_light {
+    color: white !important;
+}
+
+.text_dark {
+    color: black !important;
+}
+
+.text_bio {
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.2rem !important;
+    line-height: 1.9rem !important;
+}
+
+/* ========================
+  Top Section
+  ======================== */
+
+.top_img {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+        url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat fixed center;
+    background-size: cover;
+    color: #fff;
+}
+
+.top_img .content_bloc {
+    padding-top: 15vh;
+    /* No JS fallback*/
+    padding-bottom: 15vh;
+    /* No JS fallback*/
+}
+
+.top_img h1 {
+    font-size: 6em;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+.top_img .lead {
+    display: block;
+    text-align: center;
+}
+
+.top_img .lead {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-top: 3rem;
+}
+
+.split {
+    display: flex;
+    justify-content: center;
+}
+
+.split div {
+    max-width: 35vw;
+    padding: 6vw 2vw;
+}
+
+
+.split h2 {
+    text-align: center;
+}
+
+.split p {
+    margin-top: 1vw;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.nwhite {
+    background-color: white;
+    color: black !important;
+}
+
+.solo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.solo div {
+    padding: 2rem 0;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+}

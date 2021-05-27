@@ -21,9 +21,9 @@ img {
 
 h2 {
     font-family: 'Parisienne', cursive;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 300;
-    line-height: 5rem;
+    line-height: 7rem;
     letter-spacing: 1px;
     border-bottom: solid 1px black;
 }
@@ -224,6 +224,10 @@ p {
     margin-top: 3rem;
 }
 
+.div_img {
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -242,12 +246,22 @@ Texts
 }
 
 .text_bio {
-    width: 85%;
+    width: 45vh;
+    min-width: 500px !important;
+    max-width: 95%;
     margin: auto;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 1.2rem !important;
+    font-size: 1.6rem !important;
     line-height: 1.9rem !important;
+}
+
+.half_img {
+    margin-left: 2rem;
+}
+
+.split_text {
+    min-width: 400px !important;
 }
 
 /* ========================
@@ -262,9 +276,9 @@ Texts
 }
 
 .top_img .content_bloc {
-    padding-top: 15vh;
+    padding-top: 18vh;
     /* No JS fallback*/
-    padding-bottom: 15vh;
+    padding-bottom: 18vh;
     /* No JS fallback*/
 }
 
@@ -288,11 +302,20 @@ Texts
 .split {
     display: flex;
     justify-content: center;
+    min-height: 60vh;
+}
+
+.split img {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .split div {
-    max-width: 35vw;
-    padding: 6vw 2vw;
+    min-width: 500px;
+    width: 35vw;
+    max-width: 750px;
+    padding: 4vw 2vw !important;
 }
 
 

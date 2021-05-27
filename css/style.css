@@ -223,7 +223,7 @@ Texts
   /* No JS fallback*/
 }
 .top_img h1 {
-  font-size: 6em;
+  font-size: 9rem;
   margin-bottom: 0.3em;
   text-align: center;
 }
@@ -232,9 +232,9 @@ Texts
   text-align: center;
 }
 .top_img .lead {
-  font-size: 1.8em;
+  font-size: 2.6rem;
   font-weight: 300;
-  margin-top: 3rem;
+  margin-top: 4vw;
 }
 .split {
   display: flex;
